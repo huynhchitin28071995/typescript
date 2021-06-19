@@ -1,23 +1,27 @@
-import axios from 'axios';
+import axios from "axios";
 
-const url ='https://jsonplaceholder.typicode.com/todos/1';
+const url = "https://jsonplaceholder.typicode.com/todos/1";
 
 interface Todo {
-    id: number;
-    title: string;
-    completed: boolean;
+  id: number;
+  title: string;
+  completed: boolean;
 }
 
-axios.get(url).then(response => {
-    // console.log(response.data);
-    const todo = response.data as Todo;
-    const ID = todo.id;
-    const title = todo.title;
-    const finished = todo.completed;
+axios.get(url).then((response) => {
+  // console.log(response.data);
+  const todo = response.data as Todo;
+  const ID = todo.id;
+  const title = todo.title;
+  const completed = todo.completed;
 
-    console.log(`
-        The TODO with ID: ${ID}
-        Has the title of: ${title}
-        Is it finished? ${finished}
-    `)
+  logTodo(ID, title, completed);
 });
+
+const logTodo = (id: number, title: string, completed: boolean) => {
+  console.log(`
+          The TODO with ID: ${id}
+          Has the title of: ${title}
+          Is it finished? ${completed}
+      `);
+};

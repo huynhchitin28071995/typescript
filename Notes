@@ -1,3 +1,14 @@
 Typescript notes
 npm install -g typescript ts-node
 ts-node index.ts
+
+basic types in typescript:
+    - string
+    - number: 0.25, -40, 20
+    - boolean
+    - Date
+    - Todo {id: 1, completed: true, title: "TRASH"}
+
+    Primitive types: number, string, boolean, symbol, void, null, undefined
+    Object types: functions, arrays, classes, objects
+    any: typescript can not help with type any
