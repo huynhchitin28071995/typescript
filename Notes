@@ -1,1 +1,3 @@
 Typescript notes
+npm install -g typescript ts-node
+ts-node index.ts
