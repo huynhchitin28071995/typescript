@@ -12,3 +12,11 @@ basic types in typescript:
     Primitive types: number, string, boolean, symbol, void, null, undefined
     Object types: functions, arrays, classes, objects
     any: typescript can not help with type any
+npm install -g parcel-bundler
+parcel index.html
+object field of an instance is not initialized at instance init.
+import User from './User'; // for default export
+
+npm install @types/faker
+npm install @types/googlemaps
+172.18.174.186
